@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Assignment 6</title>
+    <link rel="stylesheet" type="text/css" href="Styles/Assignment6.css" />
+    <script src="JS/Assignment6.js"></script>  
+</head>
+
+<body>
+<h1>Assignment 6</h1>
+<section id = "title">
+<select onchange="MenuChoice()" id = "menu">
+        <option> Please Select An Option</option>
+        <option>Add Customer</option>
+        <option>Update Order</option>
+        <option>Delete Customer</option>
+</select>
+<hr>
+<section id= "section1" class = "section1">
+    <label>Please Input a Customer ID:</label>
+    <input type= "text" id= "custid">
+    <br>
+    <label>Please Input a Customer Name:</label>
+    <input type= "text" id= "custname">
+    <br>
+    <label>Please Input a Customer City:</label>
+    <input type= "text" id= "custcity">
+    <br>
+    <button onclick= "AddCustomer()" id = "cust">Add Customer</button>
+    <br>
+    <label id= "error1">error or success will display here</label>
+</section>
+
+<section id= "section2" class = "section2">
+    <label>Please Input a Order ID:</label>
+    <input type= "text" id= "orderid">
+    <br>
+    <label>Please Input Ship-to Name:</label>
+    <input type= "text" id= "shipname">
+    <br>
+    <label>Please Input Ship-to Address:</label>
+    <input type= "text" id= "shipadd">
+    <br>
+    <label>Please Input Ship-to City:</label>
+    <input type= "text" id= "shipcity">
+    <br>
+    <label>Please Input Ship-to Postal Code:</label>
+    <input type= "text" id= "shipcode">
+    <br>
+    <button onclick = "AddOrder()" id = "orders">Update Order</button>
+    <br>
+    <label id= "error2">error or success will display here</label>
+</section>
+
+<section id= "section3" class = "section3">
+    <label>Please Input a Customer ID To Be Deleted:</label>
+    <input type= "text" id= "custid1">
+    <br>
+    <button onclick = "DeleteCustomer()" id = "delcust">Delete Customer</button>
+    <br>
+    <label id= "error3">error or success will display here</label>
+</section>
+</body>
+</html>
