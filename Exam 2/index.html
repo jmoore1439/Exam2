@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Exam2</title>
+     <link rel="stylesheet" type="text/css" href="Styles/Exam2.css" />
+     <script src="JS/Exam2.js"></script>  
+</head>
+
+<body>
+<h1>Exam2</h1>
+<section id = "title">
+<select onchange="MenuChoice()" id = "menu">
+        <option> Please Select An Option</option>
+        <option> Display Category List</option>
+        <option> Add Category</option>
+        <option> Change Category Discription</option>
+        <option> Delete Category</option>
+        <option> About Developer</option>
+</select>
+</section>
+<hr>
+
+<section id= "section1" class = "section1">
+    <button onclick= "GetCategory()" id = "cust">Get Catagory List</button>
+    <br>
+    <label id= "categorydisplay">Catagories Display Here</label>
+</section>
+
+<section id= "section2" class = "section2">
+    <label>Please Input a Category Name:</label>
+    <input type= "text" id= "catname">
+    <br>
+    <label>Please Input Category Description:</label>
+    <input type= "text" id= "catdes">
+    <br>
+    <button onclick= "CreateCategories()" id = "category">Add Category</button>
+    <br>
+    <label id= "error1">error or success will display here</label>
+</section>
+
+<section id= "section3" class = "section3">
+    <label></label>
+   <label>Please Input a Category ID:</label>
+    <input type= "text" id= "catid">
+    <br>
+    <label>Please Input New Category Description:</label>
+    <input type= "text" id= "catdescrip">
+    <br>
+    <button onclick = "UpdateDescription()" id = "orders">Update Category Description</button>
+    <br>
+    <label id= "error2">error or success will display here</label>
+</section>
+
+<section id= "section4" class = "section4">
+    <label>Please Input Category ID to be Deleted</label>
+    <input type= "text" id= "categoryID">
+    <br>
+    <button onclick = "DeleteCategory()" id = "service">Delete Category</button>
+    <br>
+    <label id= "error3">error or success will display here</label>
+</section>
+
+<section id= "section5" class = "section5">
+    <label id= "aboutdweveloper">Name: Jon Moore <br> Age: 28 <br> Major: Information Systems</label>
+</section>
+
+</body>
+</html>

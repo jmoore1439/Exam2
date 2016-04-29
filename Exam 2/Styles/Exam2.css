@@ -1,0 +1,7 @@
+td {text-align: center;border: 1px solid black;}
+table{border: 1px solid black;}
+section.section1 {visibility: hidden;max-width: 600px;position: fixed; }
+section.section2 {visibility: hidden;max-width: 600px;position: fixed;}
+section.section3 {visibility: hidden;max-width: 600px;position: fixed;}
+section.section4 {visibility: hidden;max-width: 600px;position: fixed;}
+section.section5 {visibility: hidden;max-width: 600px;position: fixed;}
